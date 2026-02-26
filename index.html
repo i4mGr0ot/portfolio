@@ -5,62 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashray Saxena | Engineering Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        .gradient-text { background: linear-gradient(to right, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+    </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-[#020617] text-slate-200 selection:bg-blue-500">
 
-    <header class="py-16 px-6 text-center bg-black">
-        <h1 class="text-5xl font-extrabold text-blue-500">ASHRAY SAXENA</h1>
-        <p class="text-xl mt-4 text-gray-400">Mechanical Engineering | Aerospace | Robotics</p>
-        <p class="text-sm text-gray-500">BITS Pilani | GPA: 3.51/4</p>
-    </header>
-
-    <main class="max-w-6xl mx-auto py-12 px-6">
-        <h2 class="text-3xl font-bold mb-8 border-b border-blue-900 pb-2 text-blue-400">Technical Projects</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
-                <h3 class="text-2xl font-bold text-white">Modular ATV Chassis</h3>
-                <p class="text-blue-400 text-sm mb-4">BAJA SAE | SolidWorks & FEA</p>
-                <p class="text-gray-400 mb-4">Designed a monocoque chassis with anti-ackermann steering and a high-efficiency geartrain for smooth mobility.</p>
-                <span class="inline-block bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">CAD</span>
-                <span class="inline-block bg-blue-900 text-blue-200 text-xs px-2 py-1 rounded">Mechanical Design</span>
-            </div>
-
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
-                <h3 class="text-2xl font-bold text-white">Transpirational Cooling</h3>
-                <p class="text-blue-400 text-sm mb-4">IIT Kanpur | Aerospace Engineering</p>
-                <p class="text-gray-400 mb-4">Comparative study of Hypersonic/Subsonic flows over rocket nozzles using porous media.</p>
-                <span class="inline-block bg-green-900 text-green-200 text-xs px-2 py-1 rounded">CFD</span>
-                <span class="inline-block bg-green-900 text-green-200 text-xs px-2 py-1 rounded">Aerospace</span>
-            </div>
-
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
-                <h3 class="text-2xl font-bold text-white">Space-Mined CTO Role</h3>
-                <p class="text-blue-400 text-sm mb-4">In-Situ Resource Utilization (ISRU)</p>
-                <p class="text-gray-400 mb-4">Laser-Induced Thermal Processing of Lunar Regolith for Metal and Oxygen Extraction.</p>
-                <span class="inline-block bg-purple-900 text-purple-200 text-xs px-2 py-1 rounded">Thermal Processing</span>
-            </div>
-
-            <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700">
-                <h3 class="text-2xl font-bold text-white">Adaptive Dust Shield</h3>
-                <p class="text-blue-400 text-sm mb-4">SAE & NASA HERC</p>
-                <p class="text-gray-400 mb-4">Developed a novel Electrodynamic Dust Shield to prevent accumulation on motors and electronics.</p>
-                <span class="inline-block bg-yellow-900 text-yellow-200 text-xs px-2 py-1 rounded">Avionics</span>
-            </div>
+    <nav class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tighter">ASHRAY <span class="text-blue-500 underline decoration-2">SAXENA</span></div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+            <a href="mechanical.html" class="hover:text-blue-400 transition">Mechanical/CAD</a>
+            <a href="aerospace.html" class="hover:text-blue-400 transition">Aerospace/CFD</a>
+            <a href="robotics.html" class="hover:text-blue-400 transition">Robotics/Avionics</a>
         </div>
+        <a href="mailto:f20231043@pilani.bits-pilani.ac.in" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-full text-sm font-bold transition">Contact</a>
+    </nav>
 
-        <h2 class="text-3xl font-bold mt-16 mb-8 border-b border-blue-900 pb-2 text-blue-400">Publications</h2>
-        <div class="space-y-6">
-            <div class="bg-gray-800 p-4 rounded border-l-4 border-blue-500">
-                <p class="font-bold uppercase text-xs text-gray-500">IEEE Aerospace Conference 2026</p>
-                <p class="text-lg">Frequency-Domain Methodology for Thermoacoustic Risk Reduction in Rocket Engine Ground Operations.</p>
-            </div>
+    <section class="relative pt-40 pb-20 px-6 max-w-7xl mx-auto">
+        <div class="absolute top-20 left-0 w-72 h-72 bg-blue-600/20 rounded-full blur-[120px]"></div>
+        <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight">Engineering the <br><span class="gradient-text">Future of Flight.</span></h1>
+        <p class="text-lg text-slate-400 max-w-2xl mb-8">
+            [cite_start]Mechanical Engineering student at BITS Pilani (GPA: 3.51)[cite: 2]. [cite_start]Specialized in high-fidelity CFD, Mars Rover design, and rocket propulsion systems[cite: 16, 21, 33].
+        </p>
+        <div class="flex flex-wrap gap-4">
+            [cite_start]<div class="px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700 text-xs font-mono">NTSE Scholar (AIR 4) [cite: 33]</div>
+            [cite_start]<div class="px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700 text-xs font-mono">KVPY Scholar (AIR 189) [cite: 33]</div>
+            [cite_start]<div class="px-4 py-2 bg-slate-800/50 rounded-lg border border-slate-700 text-xs font-mono">IOQA (AIR 29) [cite: 33]</div>
         </div>
-    </main>
+    </section>
 
-    <footer class="text-center py-10 text-gray-500 text-sm italic">
-        © 2026 Ashray Saxena | Generated for CAD/Aero Internships
-    </footer>
-
+    <section class="py-20 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+        <a href="mechanical.html" class="group glass p-8 rounded-3xl hover:border-blue-500/50 transition duration-500">
+            <div class="w-12 h-12 bg-blue-500/10 text-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">⚙️</div>
+            <h3 class="text-2xl font-bold mb-3">Mechanical & CAD</h3>
+            [cite_start]<p class="text-slate-400 text-sm mb-4 italic">SolidWorks, Siemens NX, CATIA[cite: 4].</p>
+            [cite_start]<p class="text-slate-300">Modular ATV Chassis, Go-Kart Monocoque, and Robotic Sample Collection[cite: 27, 33].</p>
+        </a>
+        <a href="aerospace.html" class="group glass p-8 rounded-3xl hover:border-blue-500/50 transition duration-500">
+            <div class="w-12 h-12 bg-purple-500/10 text-purple-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">🚀</div>
+            <h3 class="text-2xl font-bold mb-3">Aerospace & CFD</h3>
+            [cite_start]<p class="text-slate-400 text-sm mb-4 italic">ANSYS, Star-CCM+, OpenVSP[cite: 4].</p>
+            [cite_start]<p class="text-slate-300">Rocket Engine Thermoacoustics, SkyNET Optimization, and Transpirational Cooling[cite: 14, 16, 33].</p>
+        </a>
+        <a href="robotics.html" class="group glass p-8 rounded-3xl hover:border-blue-500/50 transition duration-500">
+            <div class="w-12 h-12 bg-green-500/10 text-green-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">🤖</div>
+            <h3 class="text-2xl font-bold mb-3">Robotics & Avionics</h3>
+            [cite_start]<p class="text-slate-400 text-sm mb-4 italic">ROS2, YOLOv8, KiCAD[cite: 4].</p>
+            [cite_start]<p class="text-slate-300">Autonomous Mars Rovers (CRISS Robotics) and Smart Mobile Air Purifiers[cite: 11, 21].</p>
+        </a>
+    </section>
 </body>
 </html>
